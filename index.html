@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script async src="./script.js"></script>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <form class="search-form">
+                    <input
+                        type="text"
+                        class="search-input"
+                        name="buscar"
+                        placeholder="Lavarropas..."
+                    />
+                    <button class="search-button">Buscar</button>
+                </form>
+            </div>
+        </header>
+        <div class="content">
+            <h3 class="results">
+                Resultados: <span class="results-count"></span>
+            </h3>
+            <div class="results"></div>
+        </div>
+
+        <template id="result-item-template">
+            <div class="results-item">
+                <img
+                    src="https://depor.com/resizer/CxZaC40fE4MwWFAlx8uGbQ9lFKI=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6Y2EDIISGFGVFANEVDCR5LCG34.jpg"
+                    alt=""
+                    class="result-item-img"
+                />
+                <div class="result-item-content">
+                    <h4 class="result-item-title">Título</h4>
+                    <p class="result-item-condition">Nuevo</p>
+                    <p class="result-item-sell-count">
+                        Vendidos:
+                        <span class="result-item-sell-count-num"></span>
+                    </p>
+                </div>
+                <div class="result-item-price">$1111</div>
+            </div></template
+        >
+    </body>
+</html>
